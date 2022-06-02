@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="261dp"
+        android:layout_height="213dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+
+        android:src="@drawable/chat_logo" />
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/app_logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_background"
+        android:hint="Email"
+        android:paddingLeft="14dp" />
+    <EditText
+
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edit_email"
+        android:layout_marginTop="10dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_background"
+        android:paddingLeft="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:background="@drawable/button_background"
+        android:layout_width="150dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_password"
+        android:text="Login" />
+    <Button
+        android:id="@+id/button_SignUp"
+        android:background="@drawable/button_background"
+        android:layout_width="150dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_login"
+        android:text="Sign up" />
+</RelativeLayout>
